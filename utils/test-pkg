@@ -201,7 +201,7 @@ build_one() {
 
     # Validate that we generate proper json as show-info
     { tput smso; printf '>>> Running show-info\n'; tput rmso; } >> "${dir}/logfile" 2> /dev/null;
-    JQ="$(which jq)"
+    JQ="$(which jq 2> /dev/null)"
     if [ -z "${JQ}" ]; then
         make O="${dir}" host-jq >> "${dir}/logfile" 2>&1
         JQ="${dir}/host/bin/jq"
@@ -257,6 +257,7 @@ Options:
 
     -d DIR, --build-dir DIR
         Do the builds in directory DIR, one sub-dir per toolchain.
+        If not specified, defaults to \${HOME}/br-test-pkg
 
     -p PKG, --package PKG
         Test-build the package PKG, by running 'make PKG'; if not specified,

@@ -5,7 +5,10 @@ After=network.target
 [Service]
 Type=forking
 EnvironmentFile=-/etc/default/dhcpcd
+<<<<<<< HEAD
 #PIDFile=/run/dhcpcd.pid
+=======
+>>>>>>> 8dd8f39494c95aed70b23bb3af08e36dab022657
 PIDFile=/run/dhcpcd/pid
 ExecStart=/sbin/dhcpcd $DAEMON_ARGS
 Restart=always

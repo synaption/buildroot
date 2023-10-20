@@ -12,7 +12,7 @@ POLKIT_CPE_ID_VENDOR = polkit_project
 POLKIT_INSTALL_STAGING = YES
 
 # Fix was comitted in a2bf5c9c83b6ae46cbd5c779d3055bff81ded683
-POLKIT_IGNORE_CVE = CVE-2021-4034
+POLKIT_IGNORE_CVES += CVE-2021-4034
 
 POLKIT_DEPENDENCIES = \
 	duktape libglib2 host-intltool expat $(TARGET_NLS_DEPENDENCIES)
@@ -56,9 +56,10 @@ define POLKIT_USERS
 endef
 
 define POLKIT_PERMISSIONS
-	/etc/polkit-1 r 750 root polkitd - - - - -
-	/usr/share/polkit-1 r 750 root polkitd - - - - -
+	/etc/polkit-1/rules.d d 700 polkitd root - - - - -
+	/usr/share/polkit-1/rules.d d 700 polkitd root - - - - -
 	/usr/bin/pkexec f 4755 root root - - - - -
+	/usr/lib/polkit-1/polkit-agent-helper-1 f 4755 root root - - - - -
 endef
 
 define POLKIT_INSTALL_INIT_SYSTEMD
