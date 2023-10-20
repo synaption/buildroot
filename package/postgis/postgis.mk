@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 POSTGIS_VERSION = 3.3.2
+=======
+POSTGIS_VERSION = 3.2.2
+>>>>>>> origin/2022.02.x
 POSTGIS_SITE = https://download.osgeo.org/postgis/source
 # parallel build issues
 POSTGIS_MAKE = $(MAKE1)
@@ -19,7 +23,12 @@ POSTGIS_DEPENDENCIES = postgresql libgeos proj libxml2
 POSTGIS_CONF_OPTS += \
 	--with-pgconfig=$(STAGING_DIR)/usr/bin/pg_config \
 	--with-geosconfig=$(STAGING_DIR)/usr/bin/geos-config \
+<<<<<<< HEAD
 	--with-xml2config=$(STAGING_DIR)/usr/bin/xml2-config
+=======
+	--with-xml2config=$(STAGING_DIR)/usr/bin/xml2-config \
+	--without-raster
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_JSON_C),y)
 POSTGIS_DEPENDENCIES += json-c

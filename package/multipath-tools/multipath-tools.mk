@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MULTIPATH_TOOLS_VERSION = 0.9.4
+=======
+MULTIPATH_TOOLS_VERSION = 0.9.3
+>>>>>>> origin/2022.02.x
 MULTIPATH_TOOLS_SITE = $(call github,opensvc,multipath-tools,$(MULTIPATH_TOOLS_VERSION))
 
 MULTIPATH_TOOLS_LICENSE = \
@@ -22,7 +26,11 @@ MULTIPATH_TOOLS_CPE_ID_VENDOR = opensvc
 
 MULTIPATH_TOOLS_DEPENDENCIES = lvm2 json-c readline udev liburcu libaio host-pkgconf
 MULTIPATH_TOOLS_MAKE_OPTS = \
+<<<<<<< HEAD
 	kernel_incdir=$(STAGING_DIR)/usr/include \
+=======
+	LINUX_HEADERS_INCDIR=$(STAGING_DIR)/usr/include \
+>>>>>>> origin/2022.02.x
 	LIB="lib" \
 	RUN="run" \
 	OPTFLAGS="" \

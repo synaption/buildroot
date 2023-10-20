@@ -5,7 +5,11 @@
 ################################################################################
 
 MPD_VERSION_MAJOR = 0.23
+<<<<<<< HEAD
 MPD_VERSION = $(MPD_VERSION_MAJOR).13
+=======
+MPD_VERSION = $(MPD_VERSION_MAJOR).7
+>>>>>>> origin/2022.02.x
 MPD_SOURCE = mpd-$(MPD_VERSION).tar.xz
 MPD_SITE = https://www.musicpd.org/download/mpd/$(MPD_VERSION_MAJOR)
 MPD_DEPENDENCIES = host-pkgconf boost fmt

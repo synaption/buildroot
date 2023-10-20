@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 ELL_VERSION = 0.57
+=======
+ELL_VERSION = 0.48
+>>>>>>> origin/2022.02.x
 ELL_SOURCE = ell-$(ELL_VERSION).tar.xz
 ELL_SITE = $(BR2_KERNEL_MIRROR)/linux/libs/ell
 ELL_LICENSE = LGPL-2.1+

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 CAPNPROTO_VERSION = 0.10.4
+=======
+CAPNPROTO_VERSION = 0.9.2
+>>>>>>> origin/2022.02.x
 CAPNPROTO_SITE = $(call github,capnproto,capnproto,v$(CAPNPROTO_VERSION))
 CAPNPROTO_LICENSE = MIT
 CAPNPROTO_LICENSE_FILES = LICENSE

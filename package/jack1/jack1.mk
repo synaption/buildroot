@@ -12,6 +12,17 @@ JACK1_LICENSE_FILES = COPYING COPYING.GPL COPYING.LGPL
 JACK1_INSTALL_STAGING = YES
 
 JACK1_DEPENDENCIES = host-pkgconf alsa-lib berkeleydb
+<<<<<<< HEAD
+=======
+
+ifeq ($(BR2_PACKAGE_LIBSAMPLERATE),y)
+JACK1_DEPENDENCIES += libsamplerate
+endif
+
+ifeq ($(BR2_PACKAGE_LIBSNDFILE),y)
+JACK1_DEPENDENCIES += libsndfile
+endif
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_LIBSAMPLERATE),y)
 JACK1_DEPENDENCIES += libsamplerate

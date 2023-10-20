@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 SNMPPP_VERSION = 3.5.0
+=======
+SNMPPP_VERSION = 3.4.10
+>>>>>>> origin/2022.02.x
 SNMPPP_SOURCE = snmp++-$(SNMPPP_VERSION).tar.gz
 SNMPPP_SITE = http://www.agentpp.com/download
 SNMPPP_DEPENDENCIES = host-pkgconf

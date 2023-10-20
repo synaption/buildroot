@@ -70,10 +70,14 @@ LINUX_MAKE_ENV = \
 	BR_BINARIES_DIR=$(BINARIES_DIR)
 
 LINUX_INSTALL_IMAGES = YES
+<<<<<<< HEAD
 LINUX_DEPENDENCIES = \
 	host-kmod \
 	$(BR2_MAKE_HOST_DEPENDENCY)
 LINUX_MAKE = $(BR2_MAKE)
+=======
+LINUX_DEPENDENCIES = host-kmod
+>>>>>>> origin/2022.02.x
 
 # The kernel CONFIG_EXTRA_FIRMWARE feature requires firmware files at build
 # time. Make sure they are available before the kernel builds.

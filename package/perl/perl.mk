@@ -5,7 +5,11 @@
 ################################################################################
 
 # When updating the version here, also update utils/scancpan
+<<<<<<< HEAD
 PERL_VERSION_MAJOR = 36
+=======
+PERL_VERSION_MAJOR = 34
+>>>>>>> origin/2022.02.x
 PERL_VERSION = 5.$(PERL_VERSION_MAJOR).1
 PERL_SITE = https://www.cpan.org/src/5.0
 PERL_SOURCE = perl-$(PERL_VERSION).tar.xz
@@ -15,7 +19,11 @@ PERL_CPE_ID_VENDOR = perl
 PERL_DEPENDENCIES = $(TARGET_NLS_DEPENDENCIES)
 PERL_INSTALL_STAGING = YES
 
+<<<<<<< HEAD
 PERL_CROSS_VERSION = 1.4.1
+=======
+PERL_CROSS_VERSION = 1.4
+>>>>>>> origin/2022.02.x
 # DO NOT refactor with the github helper (the result is not the same)
 PERL_CROSS_SITE = https://github.com/arsv/perl-cross/releases/download/$(PERL_CROSS_VERSION)
 PERL_CROSS_SOURCE = perl-cross-$(PERL_CROSS_VERSION).tar.gz

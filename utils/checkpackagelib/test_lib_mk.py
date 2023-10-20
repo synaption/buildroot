@@ -3,6 +3,7 @@ import checkpackagelib.test_util as util
 import checkpackagelib.lib_mk as m
 
 
+<<<<<<< HEAD
 DoNotInstallToHostdirUsr = [
     ('real case',
      'libapparmor.mk',
@@ -26,6 +27,8 @@ def test_DoNotInstallToHostdirUsr(testname, filename, string, expected):
     assert warnings == expected
 
 
+=======
+>>>>>>> origin/2022.02.x
 Ifdef = [
     ('ignore commented line',
      'any',

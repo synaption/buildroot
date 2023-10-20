@@ -18,7 +18,11 @@ endif
 
 define AT91DATAFLASHBOOT_BUILD_CMDS
 	make -C $(@D) CROSS_COMPILE=$(TARGET_CROSS) \
+<<<<<<< HEAD
 		CFLAGS="$(AT91DATAFLASHBOOT_CFLAGS)"
+=======
+		CFLAGS="$(TARGET_CFLAGS) -fno-stack-protector"
+>>>>>>> origin/2022.02.x
 endef
 
 define AT91DATAFLASHBOOT_INSTALL_IMAGES_CMDS

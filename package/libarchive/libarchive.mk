@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBARCHIVE_VERSION = 3.6.2
+=======
+LIBARCHIVE_VERSION = 3.6.1
+>>>>>>> origin/2022.02.x
 LIBARCHIVE_SOURCE = libarchive-$(LIBARCHIVE_VERSION).tar.xz
 LIBARCHIVE_SITE = https://www.libarchive.de/downloads
 LIBARCHIVE_INSTALL_STAGING = YES
@@ -15,6 +19,9 @@ LIBARCHIVE_CPE_ID_VENDOR = libarchive
 LIBARCHIVE_AUTORECONF = YES
 # needed for autoreconf
 LIBARCHIVE_DEPENDENCIES += host-pkgconf
+
+# 0001-libarchive-Handle-a-calloc-returning-NULL.patch
+LIBARCHIVE_IGNORE_CVES += CVE-2022-36227
 
 ifeq ($(BR2_PACKAGE_LIBARCHIVE_BSDTAR),y)
 ifeq ($(BR2_STATIC_LIBS),y)

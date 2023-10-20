@@ -16,8 +16,12 @@ SYSLOG_NG_DEPENDENCIES = host-bison host-flex host-pkgconf \
 # We're patching configure.ac
 SYSLOG_NG_AUTORECONF = YES
 SYSLOG_NG_CONF_OPTS = --disable-manpages --localstatedir=/var/run \
+<<<<<<< HEAD
 	--disable-java --disable-java-modules --disable-mongodb \
 	--disable-python
+=======
+	--disable-java --disable-java-modules --disable-mongodb
+>>>>>>> origin/2022.02.x
 SYSLOG_NG_CFLAGS = $(TARGET_CFLAGS)
 
 ifeq ($(BR2_TOOLCHAIN_HAS_GCC_BUG_101915),y)

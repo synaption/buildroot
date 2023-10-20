@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBPNG_VERSION = 1.6.40
+=======
+LIBPNG_VERSION = 1.6.38
+>>>>>>> origin/2022.02.x
 LIBPNG_SERIES = 16
 LIBPNG_SOURCE = libpng-$(LIBPNG_VERSION).tar.xz
 LIBPNG_SITE = http://downloads.sourceforge.net/project/libpng/libpng$(LIBPNG_SERIES)/$(LIBPNG_VERSION)

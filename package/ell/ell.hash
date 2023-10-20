@@ -1,5 +1,9 @@
 # From https://mirrors.edge.kernel.org/pub/linux/libs/ell/sha256sums.asc
+<<<<<<< HEAD
 sha256  7603928ee584b758ca27c67e4dc513049a09b038d7d28459a9440f8443c91018  ell-0.57.tar.xz
+=======
+sha256  9894943042a5d6165d3e5cc354f92274fb1304004d02b4bee682ab6067cdbbd5  ell-0.48.tar.xz
+>>>>>>> origin/2022.02.x
 
 # License files
 sha256  ec60b993835e2c6b79e6d9226345f4e614e686eb57dc13b6420c15a33a8996e5  COPYING

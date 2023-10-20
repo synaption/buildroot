@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 EXIM_VERSION = 4.96.2
+=======
+EXIM_VERSION = 4.96
+>>>>>>> origin/2022.02.x
 EXIM_SOURCE = exim-$(EXIM_VERSION).tar.xz
 EXIM_SITE = https://ftp.exim.org/pub/exim/exim4
 EXIM_LICENSE = GPL-2.0+

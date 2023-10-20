@@ -4,11 +4,19 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 NODEJS_VERSION = 16.20.0
 NODEJS_SOURCE = node-v$(NODEJS_VERSION).tar.xz
 NODEJS_SITE = http://nodejs.org/dist/v$(NODEJS_VERSION)
 NODEJS_DEPENDENCIES = \
 	host-ninja \
+=======
+NODEJS_VERSION = 14.20.1
+NODEJS_SOURCE = node-v$(NODEJS_VERSION).tar.xz
+NODEJS_SITE = http://nodejs.org/dist/v$(NODEJS_VERSION)
+NODEJS_DEPENDENCIES = \
+	host-nodejs \
+>>>>>>> origin/2022.02.x
 	host-pkgconf \
 	host-python3 \
 	host-qemu \
@@ -20,7 +28,10 @@ NODEJS_DEPENDENCIES = \
 HOST_NODEJS_DEPENDENCIES = \
 	host-icu \
 	host-libopenssl \
+<<<<<<< HEAD
 	host-ninja \
+=======
+>>>>>>> origin/2022.02.x
 	host-pkgconf \
 	host-python3 \
 	host-zlib

@@ -1,3 +1,7 @@
 # Locally computed
+<<<<<<< HEAD
 sha256  9d8e68d1442403709846b93e7994652a1eca0f03924924d3a4dd31b882851375  tvheadend-fe47ecb5504a521fed9c1ca9705fb0dd2bb8443a.tar.gz
+=======
+sha256  10b8e8387cf341a8c639b3ecbab17dd245dc109afd6c99ca6b7fc3f2b5efc50e  tvheadend-1295dd2be863f5beb764290fce9317b24193dfc0.tar.gz
+>>>>>>> origin/2022.02.x
 sha256  54dc3cbc00bf126bcba43e2af7f3ad1dc00f335985da1409fa943c7b7256d942  LICENSE.md

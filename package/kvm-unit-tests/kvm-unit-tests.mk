@@ -4,9 +4,15 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 KVM_UNIT_TESTS_VERSION = 2023-01-05
 KVM_UNIT_TESTS_SOURCE = kvm-unit-tests-v$(KVM_UNIT_TESTS_VERSION).tar.bz2
 KVM_UNIT_TESTS_SITE = https://gitlab.com/kvm-unit-tests/kvm-unit-tests/-/archive/v$(KVM_UNIT_TESTS_VERSION)
+=======
+KVM_UNIT_TESTS_VERSION = kvm-unit-tests-20171020
+KVM_UNIT_TESTS_SITE = https://git.kernel.org/pub/scm/virt/kvm/kvm-unit-tests.git
+KVM_UNIT_TESTS_SITE_METHOD = git
+>>>>>>> origin/2022.02.x
 KVM_UNIT_TESTS_LICENSE = GPL-2.0, LGPL-2.0
 KVM_UNIT_TESTS_LICENSE_FILES = COPYRIGHT
 

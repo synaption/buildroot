@@ -9,7 +9,10 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARCH_SUPPORTS
 	default y if BR2_arm && BR2_ARM_CPU_ARMV5 && BR2_ARM_EABI
 	default y if BR2_arm && BR2_ARM_CPU_ARMV6 && BR2_ARM_EABIHF
 	default y if BR2_arm && BR2_ARM_CPU_ARMV7A && BR2_ARM_EABIHF
+<<<<<<< HEAD
 	default y if BR2_armeb && BR2_ARM_CPU_ARMV7A && BR2_ARM_EABIHF
+=======
+>>>>>>> origin/2022.02.x
 	default y if BR2_arm && BR2_ARM_CPU_ARMV7M
 	default y if BR2_m68k_m68k
 	default y if BR2_m68k_cf
@@ -22,21 +25,26 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARCH_SUPPORTS
 	default y if BR2_mips64 && BR2_mips_64 && BR2_MIPS_NABI32 && !BR2_MIPS_SOFT_FLOAT
 	default y if BR2_mips64el && BR2_mips_64 && BR2_MIPS_NABI32 && !BR2_MIPS_SOFT_FLOAT
 	default y if BR2_mips64el && BR2_mips_64r6 && BR2_MIPS_NABI32 && !BR2_MIPS_SOFT_FLOAT
-	default y if BR2_nios2
+	default y if BR2_nios2 && !BR2_STATIC_LIBS
 	default y if BR2_or1k
 	default y if BR2_powerpc && BR2_powerpc_440fp
 	default y if BR2_powerpc && BR2_powerpc_e300c3
 	default y if BR2_powerpc && BR2_powerpc_e500mc
-	default y if BR2_powerpc64 && BR2_powerpc_e5500
+	default y if BR2_powerpc64 && BR2_powerpc_e5500 && !BR2_STATIC_LIBS
 	default y if BR2_powerpc64 && BR2_powerpc_e6500
 	default y if BR2_powerpc64 && BR2_powerpc_power8
 	default y if BR2_powerpc64le && BR2_powerpc_power8
+<<<<<<< HEAD
 	default y if BR2_riscv && BR2_riscv_g && BR2_RISCV_32 && BR2_RISCV_ABI_ILP32D
 	default y if BR2_riscv && BR2_riscv_g && BR2_RISCV_64 && BR2_RISCV_ABI_LP64D && BR2_USE_MMU
 	default y if BR2_s390x && BR2_s390x_z13
+=======
+	default y if BR2_riscv && BR2_riscv_g && BR2_RISCV_32 && BR2_RISCV_ABI_ILP32D && !BR2_STATIC_LIBS
+	default y if BR2_riscv && BR2_riscv_g && BR2_RISCV_64 && BR2_RISCV_ABI_LP64D && BR2_USE_MMU
+>>>>>>> origin/2022.02.x
 	default y if BR2_sh && BR2_sh4
 	default y if BR2_sh && BR2_sh4aeb
-	default y if BR2_sparc64 && BR2_sparc_v9
+	default y if BR2_sparc64 && BR2_sparc_v9 && !BR2_STATIC_LIBS
 	default y if BR2_sparc && BR2_sparc_v8
 	default y if BR2_x86_64 && BR2_X86_CPU_HAS_MMX && BR2_X86_CPU_HAS_SSE && BR2_X86_CPU_HAS_SSE2
 	default y if BR2_x86_64 && BR2_X86_CPU_HAS_MMX && BR2_X86_CPU_HAS_SSE && BR2_X86_CPU_HAS_SSE2 && BR2_X86_CPU_HAS_SSE3 && BR2_X86_CPU_HAS_SSSE3 && BR2_X86_CPU_HAS_SSE4 && BR2_X86_CPU_HAS_SSE42
@@ -457,7 +465,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARCLE_HS38_UCLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_GLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv5-eabi glibc bleeding-edge 2022.08-1"
+=======
+	bool "armv5-eabi glibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -484,7 +496,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_GLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_GLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv5-eabi glibc stable 2022.08-1"
+=======
+	bool "armv5-eabi glibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -511,7 +527,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_GLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_MUSL_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv5-eabi musl bleeding-edge 2022.08-1"
+=======
+	bool "armv5-eabi musl bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -538,7 +558,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_MUSL_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_MUSL_STABLE
+<<<<<<< HEAD
 	bool "armv5-eabi musl stable 2022.08-1"
+=======
+	bool "armv5-eabi musl stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -565,7 +589,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_MUSL_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_UCLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv5-eabi uclibc bleeding-edge 2022.08-1"
+=======
+	bool "armv5-eabi uclibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -592,7 +620,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_UCLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_UCLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv5-eabi uclibc stable 2022.08-1"
+=======
+	bool "armv5-eabi uclibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV5
 	depends on BR2_ARM_EABI
@@ -619,7 +651,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV5_EABI_UCLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_GLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv6-eabihf glibc bleeding-edge 2022.08-1"
+=======
+	bool "armv6-eabihf glibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -646,7 +682,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_GLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_GLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv6-eabihf glibc stable 2022.08-1"
+=======
+	bool "armv6-eabihf glibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -673,7 +713,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_GLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_MUSL_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv6-eabihf musl bleeding-edge 2022.08-1"
+=======
+	bool "armv6-eabihf musl bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -700,7 +744,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_MUSL_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_MUSL_STABLE
+<<<<<<< HEAD
 	bool "armv6-eabihf musl stable 2022.08-1"
+=======
+	bool "armv6-eabihf musl stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -727,7 +775,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_MUSL_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_UCLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv6-eabihf uclibc bleeding-edge 2022.08-1"
+=======
+	bool "armv6-eabihf uclibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -754,7 +806,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_UCLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_UCLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv6-eabihf uclibc stable 2022.08-1"
+=======
+	bool "armv6-eabihf uclibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV6
 	depends on BR2_ARM_EABIHF
@@ -781,7 +837,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV6_EABIHF_UCLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_GLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv7-eabihf glibc bleeding-edge 2022.08-1"
+=======
+	bool "armv7-eabihf glibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -808,7 +868,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_GLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_GLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv7-eabihf glibc stable 2022.08-1"
+=======
+	bool "armv7-eabihf glibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -835,7 +899,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_GLIBC_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_MUSL_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv7-eabihf musl bleeding-edge 2022.08-1"
+=======
+	bool "armv7-eabihf musl bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -862,7 +930,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_MUSL_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_MUSL_STABLE
+<<<<<<< HEAD
 	bool "armv7-eabihf musl stable 2022.08-1"
+=======
+	bool "armv7-eabihf musl stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -889,7 +961,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_MUSL_STABLE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_UCLIBC_BLEEDING_EDGE
+<<<<<<< HEAD
 	bool "armv7-eabihf uclibc bleeding-edge 2022.08-1"
+=======
+	bool "armv7-eabihf uclibc bleeding-edge 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -916,7 +992,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_UCLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_UCLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv7-eabihf uclibc stable 2022.08-1"
+=======
+	bool "armv7-eabihf uclibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7A
 	depends on BR2_ARM_EABIHF
@@ -942,6 +1022,7 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7_EABIHF_UCLIBC_STABLE
 
 	  https://toolchains.bootlin.com/
 
+<<<<<<< HEAD
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMEBV7_EABIHF_GLIBC_BLEEDING_EDGE
 	bool "armebv7-eabihf glibc bleeding-edge 2022.08-1"
 	depends on BR2_armeb
@@ -976,6 +1057,12 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMEBV7_EABIHF_GLIBC_STABLE
 	depends on BR2_ARM_EABIHF
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
 	depends on BR2_USE_MMU
+=======
+config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7M_UCLIBC_BLEEDING_EDGE
+	bool "armv7m uclibc bleeding-edge 2021.11-1"
+	depends on BR2_arm
+	depends on BR2_ARM_CPU_ARMV7M
+>>>>>>> origin/2022.02.x
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_4_9
 	select BR2_INSTALL_LIBSTDCPP
@@ -1129,7 +1216,11 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7M_UCLIBC_BLEEDING_EDGE
 	  https://toolchains.bootlin.com/
 
 config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_ARMV7M_UCLIBC_STABLE
+<<<<<<< HEAD
 	bool "armv7m uclibc stable 2022.08-1"
+=======
+	bool "armv7m uclibc stable 2021.11-1"
+>>>>>>> origin/2022.02.x
 	depends on BR2_arm
 	depends on BR2_ARM_CPU_ARMV7M
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
@@ -3866,8 +3957,12 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_RISCV64_LP64D_UCLIBC_BLEEDING_EDGE
 	depends on BR2_RISCV_64
 	depends on BR2_RISCV_ABI_LP64D
 	depends on BR2_USE_MMU
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_13
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_12
+=======
+	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
+>>>>>>> origin/2022.02.x
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_5_4
 	select BR2_USE_WCHAR
 	select BR2_ENABLE_LOCALE
@@ -3895,8 +3990,12 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_RISCV64_LP64D_UCLIBC_STABLE
 	depends on BR2_RISCV_64
 	depends on BR2_RISCV_ABI_LP64D
 	depends on BR2_USE_MMU
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
+=======
+	select BR2_TOOLCHAIN_GCC_AT_LEAST_10
+>>>>>>> origin/2022.02.x
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_5_4
 	select BR2_USE_WCHAR
 	select BR2_ENABLE_LOCALE
@@ -5481,7 +5580,10 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_GLIBC_BLEEDING_EDGE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_13
+=======
+>>>>>>> origin/2022.02.x
 	depends on BR2_USE_MMU
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_12
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_5_4
@@ -5514,7 +5616,10 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_GLIBC_STABLE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
+=======
+>>>>>>> origin/2022.02.x
 	depends on BR2_USE_MMU
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_4_9
@@ -5547,7 +5652,10 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_MUSL_BLEEDING_EDGE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_13
+=======
+>>>>>>> origin/2022.02.x
 	depends on BR2_USE_MMU
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_12
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_5_4
@@ -5579,7 +5687,10 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_MUSL_STABLE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
+=======
+>>>>>>> origin/2022.02.x
 	depends on BR2_USE_MMU
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_4_9
@@ -5610,8 +5721,12 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_UCLIBC_BLEEDING_EDGE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_13
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_12
+=======
+	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
+>>>>>>> origin/2022.02.x
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_5_4
 	select BR2_USE_WCHAR
 	select BR2_ENABLE_LOCALE
@@ -5643,8 +5758,12 @@ config BR2_TOOLCHAIN_EXTERNAL_BOOTLIN_X86_I686_UCLIBC_STABLE
 	depends on !BR2_x86_c3
 	depends on !BR2_x86_winchip_c6
 	depends on !BR2_x86_winchip2
+<<<<<<< HEAD
 	depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_12
 	select BR2_TOOLCHAIN_GCC_AT_LEAST_11
+=======
+	select BR2_TOOLCHAIN_GCC_AT_LEAST_10
+>>>>>>> origin/2022.02.x
 	select BR2_TOOLCHAIN_HEADERS_AT_LEAST_4_9
 	select BR2_USE_WCHAR
 	select BR2_ENABLE_LOCALE

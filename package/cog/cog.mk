@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 COG_VERSION = 0.16.1
+=======
+COG_VERSION = 0.12.4
+>>>>>>> origin/2022.02.x
 COG_SITE = https://wpewebkit.org/releases
 COG_SOURCE = cog-$(COG_VERSION).tar.xz
 COG_INSTALL_STAGING = YES
@@ -34,8 +38,15 @@ COG_DEPENDENCIES += libxkbcommon wayland-protocols
 endif
 
 ifeq ($(BR2_PACKAGE_COG_PLATFORM_DRM),y)
+<<<<<<< HEAD
 COG_PLATFORMS_LIST += drm
 COG_DEPENDENCIES += libdrm libinput libgbm libegl udev
+=======
+COG_CONF_OPTS += -DCOG_PLATFORM_DRM=ON
+COG_DEPENDENCIES += libdrm libinput libgbm libegl udev
+else
+COG_CONF_OPTS += -DCOG_PLATFORM_DRM=OFF
+>>>>>>> origin/2022.02.x
 endif
 
 ifeq ($(BR2_PACKAGE_COG_USE_SYSTEM_DBUS),y)

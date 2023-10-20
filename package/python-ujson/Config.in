@@ -1,7 +1,11 @@
 config BR2_PACKAGE_PYTHON_UJSON
 	bool "python-ujson"
+<<<<<<< HEAD
 	depends on BR2_INSTALL_LIBSTDCPP # double-conversion
 	select BR2_PACKAGE_DOUBLE_CONVERSION
+=======
+	depends on BR2_INSTALL_LIBSTDCPP
+>>>>>>> origin/2022.02.x
 	help
 	  UltraJSON is an ultra fast JSON encoder and decoder written
 	  in pure C with bindings for Python 3.

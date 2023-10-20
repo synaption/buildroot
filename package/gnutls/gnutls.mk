@@ -5,8 +5,13 @@
 ################################################################################
 
 # When bumping, make sure *all* --without-libfoo-prefix options are in GNUTLS_CONF_OPTS
+<<<<<<< HEAD
 GNUTLS_VERSION_MAJOR = 3.8
 GNUTLS_VERSION = $(GNUTLS_VERSION_MAJOR).0
+=======
+GNUTLS_VERSION_MAJOR = 3.7
+GNUTLS_VERSION = $(GNUTLS_VERSION_MAJOR).8
+>>>>>>> origin/2022.02.x
 GNUTLS_SOURCE = gnutls-$(GNUTLS_VERSION).tar.xz
 GNUTLS_SITE = https://www.gnupg.org/ftp/gcrypt/gnutls/v$(GNUTLS_VERSION_MAJOR)
 GNUTLS_LICENSE = LGPL-2.1+ (core library)
@@ -40,6 +45,7 @@ GNUTLS_CONF_ENV = gl_cv_socket_ipv6=yes \
 	gl_cv_func_gettimeofday_clobber=no
 GNUTLS_INSTALL_STAGING = YES
 
+<<<<<<< HEAD
 HOST_GNUTLS_DEPENDENCIES = host-pkgconf host-libtasn1 host-libunistring host-nettle
 HOST_GNUTLS_CONF_OPTS = \
 	--disable-doc \
@@ -72,6 +78,16 @@ else
 GNUTLS_CONF_OPTS += --disable-openssl-compatibility
 endif
 
+=======
+ifeq ($(BR2_PACKAGE_GNUTLS_OPENSSL),y)
+GNUTLS_LICENSE += , GPL-3.0+ (gnutls-openssl library)
+GNUTLS_LICENSE_FILES += doc/COPYING
+GNUTLS_CONF_OPTS += --enable-openssl-compatibility
+else
+GNUTLS_CONF_OPTS += --disable-openssl-compatibility
+endif
+
+>>>>>>> origin/2022.02.x
 ifeq ($(BR2_PACKAGE_BROTLI),y)
 GNUTLS_CONF_OPTS += --with-libbrotli
 GNUTLS_DEPENDENCIES += brotli

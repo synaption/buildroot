@@ -612,8 +612,33 @@ config BR2_PACKAGE_BOOST_LAYOUT_VERSIONED
 
 comment "Legacy options removed in 2022.02"
 
+<<<<<<< HEAD
 config BR2_TARGET_ROOTFS_OCI_ENTRYPOINT_ARGS
 	string "entrypoint argumetns has been changed as command"
+=======
+config BR2_PACKAGE_LIBOPENSSL_ENABLE_RC5
+	bool "libopenssl rc5 was never enabled"
+	select BR2_LEGACY
+	help
+	  The libopenssl option for rc5 never actually enabled rc5,
+	  which had always been disabled in Buildroot.
+
+config BR2_PACKAGE_PHP_EXT_WDDX
+	bool "php wddx removed"
+	select BR2_LEGACY
+	help
+	  The WDDX extension was removed from php.
+
+config BR2_sh2a
+	bool "sh2a architecture support removed"
+	select BR2_LEGACY
+	help
+	  The SuperH 2A (SH2A) architecture was not maintained, and
+	  broken, so its support was dropped.
+
+config BR2_TARGET_ROOTFS_OCI_ENTRYPOINT_ARGS
+	string "entrypoint arguments has been changed as command"
+>>>>>>> origin/2022.02.x
 	help
 	  The OCI image BR2_TARGET_ROOTFS_OCI_ENTRYPOINT_ARGS option
 	  has been renamed to BR2_TARGET_ROOTFS_OCI_CMD to better
@@ -621,7 +646,11 @@ config BR2_TARGET_ROOTFS_OCI_ENTRYPOINT_ARGS
 	  image.
 
 	  The new semantic for BR2_TARGET_ROOTFS_OCI_CMD is slightly
+<<<<<<< HEAD
 	  differnt in relation to how it is interpreted, so be sure to
+=======
+	  different in relation to how it is interpreted, so be sure to
+>>>>>>> origin/2022.02.x
 	  review the help entry for it.
 
 	  Due to this breaking change, the old value here could not be

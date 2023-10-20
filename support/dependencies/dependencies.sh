@@ -280,7 +280,10 @@ required_perl_modules="$required_perl_modules English" # Used by host-libxml-par
 required_perl_modules="$required_perl_modules ExtUtils::MakeMaker" # Used by host-libxml-parser-perl
 required_perl_modules="$required_perl_modules Thread::Queue" # Used by host-automake
 required_perl_modules="$required_perl_modules FindBin" # Used by (host-)libopenssl
+<<<<<<< HEAD
 required_perl_modules="$required_perl_modules IPC::Cmd" # Used by (host-)libopenssl
+=======
+>>>>>>> origin/2022.02.x
 
 if grep -q ^BR2_PACKAGE_MOSH=y $BR2_CONFIG ; then
     required_perl_modules="$required_perl_modules diagnostics"

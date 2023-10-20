@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 SAMBA4_VERSION = 4.18.8
+=======
+SAMBA4_VERSION = 4.15.13
+>>>>>>> origin/2022.02.x
 SAMBA4_SITE = https://download.samba.org/pub/samba/stable
 SAMBA4_SOURCE = samba-$(SAMBA4_VERSION).tar.gz
 SAMBA4_INSTALL_STAGING = YES

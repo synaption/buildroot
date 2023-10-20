@@ -1,0 +1,10 @@
+--- a/daemon/transmission-daemon.service	2020-05-22 06:04:23.378804764 -0500
++++ b/daemon/transmission-daemon.service	2022-11-17 05:09:32.773312675 -0600
+@@ -5,6 +5,7 @@
+ [Service]
+ User=transmission
+ Type=notify
++USER=pi
+ ExecStart=/usr/bin/transmission-daemon -f --log-error
+ ExecReload=/bin/kill -s HUP $MAINPID
+ NoNewPrivileges=true

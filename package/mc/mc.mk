@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MC_VERSION = 4.8.29
+=======
+MC_VERSION = 4.8.28
+>>>>>>> origin/2022.02.x
 MC_SOURCE = mc-$(MC_VERSION).tar.xz
 MC_SITE = http://ftp.midnight-commander.org
 MC_LICENSE = GPL-3.0+

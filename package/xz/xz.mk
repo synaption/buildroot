@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 XZ_VERSION = 5.4.3
+=======
+XZ_VERSION = 5.2.10
+>>>>>>> origin/2022.02.x
 XZ_SOURCE = xz-$(XZ_VERSION).tar.bz2
 XZ_SITE = https://tukaani.org/xz
 XZ_INSTALL_STAGING = YES

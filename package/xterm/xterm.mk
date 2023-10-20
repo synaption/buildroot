@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 XTERM_VERSION = 384
+=======
+XTERM_VERSION = 376
+>>>>>>> origin/2022.02.x
 XTERM_SOURCE = xterm-$(XTERM_VERSION).tgz
 XTERM_SITE = http://invisible-mirror.net/archives/xterm
 XTERM_DEPENDENCIES = ncurses xlib_libXaw host-pkgconf

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 NETSNMP_VERSION = 5.9.4
+=======
+NETSNMP_VERSION = 5.9.3
+>>>>>>> origin/2022.02.x
 NETSNMP_SITE = https://downloads.sourceforge.net/project/net-snmp/net-snmp/$(NETSNMP_VERSION)
 NETSNMP_SOURCE = net-snmp-$(NETSNMP_VERSION).tar.gz
 NETSNMP_LICENSE = Various BSD-like
@@ -40,8 +44,11 @@ NETSNMP_INSTALL_STAGING_OPTS = DESTDIR=$(STAGING_DIR) LIB_LDCONFIG_CMD=true inst
 NETSNMP_INSTALL_TARGET_OPTS = DESTDIR=$(TARGET_DIR) LIB_LDCONFIG_CMD=true install
 NETSNMP_MAKE = $(MAKE1)
 NETSNMP_CONFIG_SCRIPTS = net-snmp-config
+<<<<<<< HEAD
 # We're patching configure.d/config_project_types
 NETSNMP_AUTORECONF = YES
+=======
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_ENDIAN),"BIG")
 NETSNMP_CONF_OPTS += --with-endianness=big

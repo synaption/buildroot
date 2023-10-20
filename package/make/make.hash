@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # From https://lists.gnu.org/archive/html/info-gnu/2023-02/msg00011.html
 md5  c8b13b7477e812d4213a9b88ff0ff1d6  make-4.4.1.tar.lz
+=======
+# From http://lists.gnu.org/archive/html/info-gnu/2016-06/msg00005.html
+md5  15b012617e7c44c0ed482721629577ac  make-4.2.1.tar.bz2
+>>>>>>> origin/2022.02.x
 # Locally calculated after checking signature
 sha256  8814ba072182b605d156d7589c19a43b89fc58ea479b9355146160946f8cf6e9  make-4.4.1.tar.lz
 # Locally computed

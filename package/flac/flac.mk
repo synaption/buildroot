@@ -15,7 +15,14 @@ FLAC_CPE_ID_VENDOR = flac_project
 
 FLAC_CONF_OPTS = \
 	$(if $(BR2_INSTALL_LIBSTDCPP),--enable-cpplibs,--disable-cpplibs) \
+<<<<<<< HEAD
 	--disable-stack-smash-protection
+=======
+	--disable-xmms-plugin \
+	--disable-altivec \
+	--disable-stack-smash-protection \
+	--disable-vsx
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_LIBOGG),y)
 FLAC_CONF_OPTS += --with-ogg=$(STAGING_DIR)/usr

@@ -4,9 +4,15 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 DAV1D_VERSION = 1.2.1
 DAV1D_SOURCE = dav1d-$(DAV1D_VERSION).tar.xz
 DAV1D_SITE = https://download.videolan.org/pub/videolan/dav1d/$(DAV1D_VERSION)
+=======
+DAV1D_VERSION = 0.9.2
+DAV1D_SOURCE = dav1d-$(DAV1D_VERSION).tar.xz
+DAV1D_SITE = http://download.videolan.org/pub/videolan/dav1d/$(DAV1D_VERSION)
+>>>>>>> origin/2022.02.x
 DAV1D_LICENSE = BSD-2-Clause
 DAV1D_LICENSE_FILES = COPYING
 DAV1D_CPE_ID_VENDOR = videolan

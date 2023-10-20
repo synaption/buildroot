@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 UCLIBC_VERSION = 1.0.44
+=======
+UCLIBC_VERSION = 1.0.43
+>>>>>>> origin/2022.02.x
 UCLIBC_SOURCE = uClibc-ng-$(UCLIBC_VERSION).tar.xz
 UCLIBC_SITE = https://downloads.uclibc-ng.org/releases/$(UCLIBC_VERSION)
 UCLIBC_LICENSE = LGPL-2.1+

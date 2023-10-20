@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 GST1_LIBAV_VERSION = 1.22.6
+=======
+GST1_LIBAV_VERSION = 1.20.4
+>>>>>>> origin/2022.02.x
 GST1_LIBAV_SOURCE = gst-libav-$(GST1_LIBAV_VERSION).tar.xz
 GST1_LIBAV_SITE = https://gstreamer.freedesktop.org/src/gst-libav
 GST1_LIBAV_LICENSE = LGPL-2.1+

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 PHP_VERSION = 8.2.11
+=======
+PHP_VERSION = 8.0.28
+>>>>>>> origin/2022.02.x
 PHP_SITE = https://www.php.net/distributions
 PHP_SOURCE = php-$(PHP_VERSION).tar.xz
 PHP_INSTALL_STAGING = YES

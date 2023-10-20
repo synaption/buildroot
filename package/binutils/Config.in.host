@@ -19,11 +19,24 @@ config BR2_BINUTILS_VERSION_2_39_X
 	bool "binutils 2.39"
 	select BR2_PACKAGE_BINUTILS_HAS_NO_LIBSFRAME
 
+<<<<<<< HEAD
 config BR2_BINUTILS_VERSION_2_40_X
 	bool "binutils 2.40"
 
 config BR2_BINUTILS_VERSION_2_41_X
 	bool "binutils 2.41"
+=======
+config BR2_BINUTILS_VERSION_2_35_X
+	bool "binutils 2.35.2"
+	depends on !BR2_csky
+
+config BR2_BINUTILS_VERSION_2_36_X
+	bool "binutils 2.36.1"
+	depends on !BR2_csky
+
+config BR2_BINUTILS_VERSION_2_37_X
+	bool "binutils 2.37"
+>>>>>>> origin/2022.02.x
 
 config BR2_BINUTILS_VERSION_ARC
 	bool "binutils arc (2.34.50)"

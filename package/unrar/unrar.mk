@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 UNRAR_VERSION = 6.2.6
+=======
+UNRAR_VERSION = 6.1.7
+>>>>>>> origin/2022.02.x
 UNRAR_SOURCE = unrarsrc-$(UNRAR_VERSION).tar.gz
 UNRAR_SITE = https://www.rarlab.com/rar
 UNRAR_LICENSE = unrar

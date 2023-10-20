@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 TOR_VERSION = 0.4.7.14
+=======
+TOR_VERSION = 0.4.7.13
+>>>>>>> origin/2022.02.x
 TOR_SITE = https://dist.torproject.org
 TOR_LICENSE = BSD-3-Clause
 TOR_LICENSE_FILES = LICENSE

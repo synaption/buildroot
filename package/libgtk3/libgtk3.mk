@@ -5,7 +5,11 @@
 ################################################################################
 
 LIBGTK3_VERSION_MAJOR = 3.24
+<<<<<<< HEAD
 LIBGTK3_VERSION = $(LIBGTK3_VERSION_MAJOR).38
+=======
+LIBGTK3_VERSION = $(LIBGTK3_VERSION_MAJOR).34
+>>>>>>> origin/2022.02.x
 LIBGTK3_SOURCE = gtk+-$(LIBGTK3_VERSION).tar.xz
 LIBGTK3_SITE = https://download.gnome.org/sources/gtk+/$(LIBGTK3_VERSION_MAJOR)
 LIBGTK3_LICENSE = LGPL-2.0+

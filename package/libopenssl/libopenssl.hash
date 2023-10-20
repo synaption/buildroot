@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # From https://www.openssl.org/source/openssl-3.0.11.tar.gz.sha256
 sha256  b3425d3bb4a2218d0697eb41f7fc0cdede016ed19ca49d168b78e8d947887f55  openssl-3.0.11.tar.gz
+=======
+# From https://www.openssl.org/source/openssl-1.1.1t.tar.gz.sha256
+sha256  8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b  openssl-1.1.1t.tar.gz
+>>>>>>> origin/2022.02.x
 
 # License files
 sha256  7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a  LICENSE.txt

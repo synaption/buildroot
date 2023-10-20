@@ -49,6 +49,7 @@ comment "udisks needs a toolchain with dynamic library, locale, wchar, threads, 
 
 comment "udisks can't be built with Optimize for fast"
 	depends on BR2_OPTIMIZE_FAST
+<<<<<<< HEAD
 
 if BR2_PACKAGE_UDISKS
 
@@ -59,3 +60,5 @@ config BR2_PACKAGE_UDISKS_FHS_MEDIA
 	  Filesystem Hierarchy Standard (FHS)
 
 endif
+=======
+>>>>>>> origin/2022.02.x

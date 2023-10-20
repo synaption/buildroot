@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 GST1_PLUGINS_BASE_VERSION = 1.22.6
+=======
+GST1_PLUGINS_BASE_VERSION = 1.20.4
+>>>>>>> origin/2022.02.x
 GST1_PLUGINS_BASE_SOURCE = gst-plugins-base-$(GST1_PLUGINS_BASE_VERSION).tar.xz
 GST1_PLUGINS_BASE_SITE = https://gstreamer.freedesktop.org/src/gst-plugins-base
 GST1_PLUGINS_BASE_INSTALL_STAGING = YES

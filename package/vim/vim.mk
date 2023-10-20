@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 VIM_VERSION = 9.0.1903
+=======
+VIM_VERSION = 9.0.1414
+>>>>>>> origin/2022.02.x
 VIM_SITE = $(call github,vim,vim,v$(VIM_VERSION))
 VIM_DEPENDENCIES = ncurses $(TARGET_NLS_DEPENDENCIES)
 VIM_SUBDIR = src

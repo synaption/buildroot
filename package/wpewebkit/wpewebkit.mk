@@ -4,8 +4,13 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 WPEWEBKIT_VERSION = 2.40.3
 WPEWEBKIT_SITE = https://wpewebkit.org/releases
+=======
+WPEWEBKIT_VERSION = 2.38.6
+WPEWEBKIT_SITE = http://www.wpewebkit.org/releases
+>>>>>>> origin/2022.02.x
 WPEWEBKIT_SOURCE = wpewebkit-$(WPEWEBKIT_VERSION).tar.xz
 WPEWEBKIT_INSTALL_STAGING = YES
 WPEWEBKIT_LICENSE = LGPL-2.1+, BSD-2-Clause
@@ -26,7 +31,10 @@ WPEWEBKIT_CONF_OPTS = \
 	-DENABLE_INTROSPECTION=OFF \
 	-DENABLE_MINIBROWSER=OFF \
 	-DENABLE_WEB_RTC=OFF \
+<<<<<<< HEAD
 	-DUSE_AVIF=OFF \
+=======
+>>>>>>> origin/2022.02.x
 	-DUSE_SOUP2=ON
 
 ifeq ($(BR2_PACKAGE_WPEWEBKIT_SANDBOX),y)

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBZLIB_VERSION = 1.2.13
+=======
+LIBZLIB_VERSION = 1.2.12
+>>>>>>> origin/2022.02.x
 LIBZLIB_SOURCE = zlib-$(LIBZLIB_VERSION).tar.xz
 LIBZLIB_SITE = http://www.zlib.net
 LIBZLIB_LICENSE = Zlib
@@ -13,6 +17,9 @@ LIBZLIB_INSTALL_STAGING = YES
 LIBZLIB_PROVIDES = zlib
 LIBZLIB_CPE_ID_VENDOR = zlib
 LIBZLIB_CPE_ID_PRODUCT = zlib
+
+# 0002-fix-CVE-2022-37434.patch
+LIBZLIB_IGNORE_CVES = CVE-2022-37434
 
 # It is not possible to build only a shared version of zlib, so we build both
 # shared and static, unless we only want the static libs, and we eventually

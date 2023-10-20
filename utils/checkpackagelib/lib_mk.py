@@ -21,6 +21,7 @@ continue_conditional = ["elif", "else"]
 end_conditional = ["endif"]
 
 
+<<<<<<< HEAD
 class DoNotInstallToHostdirUsr(_CheckFunction):
     INSTALL_TO_HOSTDIR_USR = re.compile(r"^[^#].*\$\(HOST_DIR\)/usr")
 
@@ -31,6 +32,8 @@ class DoNotInstallToHostdirUsr(_CheckFunction):
                     text]
 
 
+=======
+>>>>>>> origin/2022.02.x
 class Ifdef(_CheckFunction):
     IFDEF = re.compile(r"^\s*(else\s+|)(ifdef|ifndef)\s")
 

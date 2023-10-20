@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBHTP_VERSION = 0.5.45
+=======
+LIBHTP_VERSION = 0.5.40
+>>>>>>> origin/2022.02.x
 LIBHTP_SITE = $(call github,OISF,libhtp,$(LIBHTP_VERSION))
 LIBHTP_LICENSE = BSD-3-Clause
 LIBHTP_LICENSE_FILES = LICENSE

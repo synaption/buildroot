@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 GNUPG2_VERSION = 2.4.2
+=======
+GNUPG2_VERSION = 2.3.8
+>>>>>>> origin/2022.02.x
 GNUPG2_SOURCE = gnupg-$(GNUPG2_VERSION).tar.bz2
 GNUPG2_SITE = https://gnupg.org/ftp/gcrypt/gnupg
 GNUPG2_LICENSE = GPL-3.0+

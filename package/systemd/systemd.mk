@@ -19,7 +19,11 @@
 # - Diff sysusers.d with the previous version
 # - Diff factory/etc/nsswitch.conf with the previous version
 #   (details are often sprinkled around in README and manpages)
+<<<<<<< HEAD
 SYSTEMD_VERSION = 254.5
+=======
+SYSTEMD_VERSION = 250.8
+>>>>>>> origin/2022.02.x
 SYSTEMD_SITE = $(call github,systemd,systemd-stable,v$(SYSTEMD_VERSION))
 SYSTEMD_LICENSE = \
 	LGPL-2.1+, \

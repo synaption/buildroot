@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 WGET_VERSION = 1.21.4
+=======
+WGET_VERSION = 1.21.3
+>>>>>>> origin/2022.02.x
 WGET_SOURCE = wget-$(WGET_VERSION).tar.lz
 WGET_SITE = $(BR2_GNU_MIRROR)/wget
 WGET_DEPENDENCIES = host-pkgconf

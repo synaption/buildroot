@@ -10,6 +10,13 @@ POLKIT_LICENSE = GPL-2.0
 POLKIT_LICENSE_FILES = COPYING
 POLKIT_CPE_ID_VENDOR = polkit_project
 POLKIT_INSTALL_STAGING = YES
+<<<<<<< HEAD
+=======
+
+# Fix was comitted in a2bf5c9c83b6ae46cbd5c779d3055bff81ded683
+POLKIT_IGNORE_CVES += CVE-2021-4034
+
+>>>>>>> origin/2022.02.x
 POLKIT_DEPENDENCIES = \
 	duktape libglib2 host-intltool expat $(TARGET_NLS_DEPENDENCIES)
 

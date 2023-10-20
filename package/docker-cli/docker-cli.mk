@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 DOCKER_CLI_VERSION = 24.0.6
+=======
+DOCKER_CLI_VERSION = 20.10.22
+>>>>>>> origin/2022.02.x
 DOCKER_CLI_SITE = $(call github,docker,cli,v$(DOCKER_CLI_VERSION))
 
 DOCKER_CLI_LICENSE = Apache-2.0
@@ -18,6 +22,8 @@ DOCKER_CLI_CPE_ID_PRODUCT = docker
 DOCKER_CLI_TAGS = autogen
 DOCKER_CLI_BUILD_TARGETS = cmd/docker
 DOCKER_CLI_GOMOD = github.com/docker/cli
+
+DOCKER_CLI_DEPENDENCIES += host-dosfstools
 
 DOCKER_CLI_LDFLAGS = \
 	-X $(DOCKER_CLI_GOMOD)/cli/version.GitCommit=$(DOCKER_CLI_VERSION) \

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBOPENSSL_VERSION = 3.0.11
+=======
+LIBOPENSSL_VERSION = 1.1.1t
+>>>>>>> origin/2022.02.x
 LIBOPENSSL_SITE = https://www.openssl.org/source
 LIBOPENSSL_SOURCE = openssl-$(LIBOPENSSL_VERSION).tar.gz
 LIBOPENSSL_LICENSE = Apache-2.0

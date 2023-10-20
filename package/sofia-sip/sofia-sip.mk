@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 SOFIA_SIP_VERSION = 1.13.16
+=======
+SOFIA_SIP_VERSION = 1.13.12
+>>>>>>> origin/2022.02.x
 SOFIA_SIP_SITE = $(call github,freeswitch,sofia-sip,v$(SOFIA_SIP_VERSION))
 SOFIA_SIP_INSTALL_STAGING = YES
 # Fetched from github, no pre-generated configure script provided

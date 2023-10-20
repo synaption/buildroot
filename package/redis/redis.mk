@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 REDIS_VERSION = 7.0.11
+=======
+REDIS_VERSION = 6.2.7
+>>>>>>> origin/2022.02.x
 REDIS_SITE = http://download.redis.io/releases
 REDIS_LICENSE = BSD-3-Clause (core); MIT and BSD family licenses (Bundled components)
 REDIS_LICENSE_FILES = COPYING

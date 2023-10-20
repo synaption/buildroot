@@ -46,7 +46,11 @@ config BR2_arm
 
 config BR2_armeb
 	bool "ARM (big endian)"
+<<<<<<< HEAD
 	select BR2_USE_MMU
+=======
+	select BR2_ARCH_HAS_MMU_MANDATORY
+>>>>>>> origin/2022.02.x
 	help
 	  ARM is a 32-bit reduced instruction set computer (RISC)
 	  instruction set architecture (ISA) developed by ARM Holdings.
@@ -205,7 +209,11 @@ config BR2_s390x
 
 config BR2_sh
 	bool "SuperH"
+<<<<<<< HEAD
 	select BR2_USE_MMU
+=======
+	select BR2_ARCH_HAS_MMU_MANDATORY
+>>>>>>> origin/2022.02.x
 	help
 	  SuperH (or SH) is a 32-bit reduced instruction set computer
 	  (RISC) instruction set architecture (ISA) developed by

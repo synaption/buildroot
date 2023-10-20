@@ -48,6 +48,16 @@ else
 NFTABLES_CONF_OPTS += --without-json
 endif
 
+<<<<<<< HEAD
+=======
+ifeq ($(BR2_PACKAGE_PYTHON3),y)
+NFTABLES_CONF_OPTS += --enable-python
+NFTABLES_DEPENDENCIES += python3
+else
+NFTABLES_CONF_OPTS += --disable-python
+endif
+
+>>>>>>> origin/2022.02.x
 NFTABLES_CONF_ENV = LIBS="$(NFTABLES_LIBS)"
 
 define NFTABLES_LINUX_CONFIG_FIXUPS

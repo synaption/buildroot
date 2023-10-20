@@ -4,9 +4,15 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 OPENVPN_VERSION = 2.6.5
 OPENVPN_SITE = https://swupdate.openvpn.net/community/releases
 OPENVPN_DEPENDENCIES = host-pkgconf libcap-ng
+=======
+OPENVPN_VERSION = 2.5.6
+OPENVPN_SITE = https://swupdate.openvpn.net/community/releases
+OPENVPN_DEPENDENCIES = host-pkgconf
+>>>>>>> origin/2022.02.x
 OPENVPN_LICENSE = GPL-2.0
 OPENVPN_LICENSE_FILES = COPYRIGHT.GPL
 OPENVPN_CPE_ID_VENDOR = openvpn
@@ -81,5 +87,13 @@ define OPENVPN_INSTALL_INIT_SYSV
 	$(INSTALL) -m 755 -D package/openvpn/S60openvpn \
 		$(TARGET_DIR)/etc/init.d/S60openvpn
 endef
+
+####################
+#define OPENVPN_INSTALL_INIT_SYSTEMD
+#	$(INSTALL) -D -m 644 package/openvpn/openvpn-client@node.service \
+#		$(TARGET_DIR)/usr/lib/systemd/system/openvpn-client@node.service
+#endef
+####################
+
 
 $(eval $(autotools-package))

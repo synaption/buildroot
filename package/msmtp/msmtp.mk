@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MSMTP_VERSION = 1.8.24
+=======
+MSMTP_VERSION = 1.8.22
+>>>>>>> origin/2022.02.x
 MSMTP_SITE = https://marlam.de/msmtp/releases
 MSMTP_SOURCE = msmtp-$(MSMTP_VERSION).tar.xz
 MSMTP_DEPENDENCIES = host-pkgconf

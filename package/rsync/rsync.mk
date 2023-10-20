@@ -4,8 +4,13 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 RSYNC_VERSION = 3.2.7
 RSYNC_SITE = https://rsync.samba.org/ftp/rsync/src
+=======
+RSYNC_VERSION = 3.2.5
+RSYNC_SITE = http://rsync.samba.org/ftp/rsync/src
+>>>>>>> origin/2022.02.x
 RSYNC_LICENSE = GPL-3.0+ with exceptions
 RSYNC_LICENSE_FILES = COPYING
 RSYNC_CPE_ID_VENDOR = samba
@@ -18,6 +23,13 @@ RSYNC_CONF_OPTS = \
 	--with-included-zlib=no \
 	--with-included-popt=no \
 	--disable-roll-simd \
+<<<<<<< HEAD
+=======
+	--disable-openssl \
+	--disable-xxhash \
+	--disable-zstd \
+	--disable-lz4 \
+>>>>>>> origin/2022.02.x
 	--disable-md5-asm
 
 ifeq ($(BR2_TOOLCHAIN_HAS_LIBATOMIC),y)

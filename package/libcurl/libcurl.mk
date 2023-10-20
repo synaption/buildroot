@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBCURL_VERSION = 8.4.0
+=======
+LIBCURL_VERSION = 7.88.1
+>>>>>>> origin/2022.02.x
 LIBCURL_SOURCE = curl-$(LIBCURL_VERSION).tar.xz
 LIBCURL_SITE = https://curl.se/download
 LIBCURL_DEPENDENCIES = host-pkgconf \
@@ -23,6 +27,7 @@ LIBCURL_INSTALL_STAGING = YES
 #
 # Likewise, there is no compiler on the target, so libcurl-option (to
 # generate C code) isn't very useful
+<<<<<<< HEAD
 LIBCURL_CONF_OPTS = \
 	--disable-manual \
 	--disable-ntlm \
@@ -32,6 +37,11 @@ LIBCURL_CONF_OPTS = \
 	--disable-libcurl-option \
 	--disable-ldap \
 	--disable-ldaps
+=======
+LIBCURL_CONF_OPTS = --disable-manual --disable-ntlm-wb \
+	--with-random=/dev/urandom --disable-curldebug \
+	--disable-libcurl-option --disable-ldap --disable-ldaps
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_TOOLCHAIN_HAS_THREADS),y)
 LIBCURL_CONF_OPTS += --enable-threaded-resolver
@@ -63,6 +73,14 @@ endif
 
 ifeq ($(BR2_PACKAGE_LIBCURL_OPENSSL),y)
 LIBCURL_DEPENDENCIES += openssl
+<<<<<<< HEAD
+=======
+# configure adds the cross openssl dir to LD_LIBRARY_PATH which screws up
+# native stuff during the rest of configure when target == host.
+# Fix it by setting LD_LIBRARY_PATH to something sensible so those libs
+# are found first.
+LIBCURL_CONF_ENV += LD_LIBRARY_PATH=$(if $(LD_LIBRARY_PATH),$(LD_LIBRARY_PATH):)/lib:/usr/lib
+>>>>>>> origin/2022.02.x
 LIBCURL_CONF_OPTS += --with-openssl=$(STAGING_DIR)/usr \
 	--with-ca-path=/etc/ssl/certs
 else

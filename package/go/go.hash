@@ -1,3 +1,7 @@
 # From https://go.dev/dl
+<<<<<<< HEAD
 sha256  72d2f51805c47150066c103754c75fddb2c19d48c9219fa33d1e46696c841dbb  go1.20.10.src.tar.gz
+=======
+sha256  9cedcca58845df0c9474ae00274c44a95c9dfaefb132fc59921c28c7c106f8e6  go1.18.10.src.tar.gz
+>>>>>>> origin/2022.02.x
 sha256  2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067  LICENSE

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 POPPLER_VERSION = 22.12.0
+=======
+POPPLER_VERSION = 22.10.0
+>>>>>>> origin/2022.02.x
 POPPLER_SOURCE = poppler-$(POPPLER_VERSION).tar.xz
 POPPLER_SITE = https://poppler.freedesktop.org
 POPPLER_DEPENDENCIES = fontconfig host-pkgconf

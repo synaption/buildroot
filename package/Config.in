@@ -1283,6 +1283,7 @@ menu "External python modules"
 	source "package/python-s3transfer/Config.in"
 	source "package/python-scandir/Config.in"
 	source "package/python-scapy/Config.in"
+	source "package/python-scipy/Config.in"
 	source "package/python-schedule/Config.in"
 	source "package/python-scipy/Config.in"
 	source "package/python-sdnotify/Config.in"
@@ -1651,7 +1652,10 @@ menu "Graphics"
 	source "package/openjpeg/Config.in"
 	source "package/pango/Config.in"
 	source "package/pangomm/Config.in"
+<<<<<<< HEAD
 	source "package/pangomm2_46/Config.in"
+=======
+>>>>>>> origin/2022.02.x
 	source "package/pixman/Config.in"
 	source "package/poppler/Config.in"
 	source "package/powervr/Config.in"

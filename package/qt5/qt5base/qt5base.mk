@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 QT5BASE_VERSION = e44097b63d17ba3178a637df7fac51ddc51cb48b
+=======
+QT5BASE_VERSION = f31e001a9399e4e620847ea2c3e90749350140ae
+>>>>>>> origin/2022.02.x
 QT5BASE_SITE = $(QT5_SITE)/qtbase/-/archive/$(QT5BASE_VERSION)
 QT5BASE_SOURCE = qtbase-$(QT5BASE_VERSION).tar.bz2
 

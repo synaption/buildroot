@@ -20,6 +20,7 @@ PULSEAUDIO_CONF_OPTS = \
 	-Dtests=false
 
 PULSEAUDIO_DEPENDENCIES = \
+<<<<<<< HEAD
 	host-pkgconf libtool libsndfile libglib2 \
 	$(TARGET_NLS_DEPENDENCIES)
 
@@ -45,6 +46,16 @@ PULSEAUDIO_DEPENDENCIES += fftw-single
 else
 PULSEAUDIO_CONF_OPTS += -Dfftw=disabled
 endif
+=======
+	host-pkgconf libtool libsndfile speex \
+	$(TARGET_NLS_DEPENDENCIES) \
+	$(if $(BR2_PACKAGE_LIBGLIB2),libglib2) \
+	$(if $(BR2_PACKAGE_AVAHI_DAEMON),avahi) \
+	$(if $(BR2_PACKAGE_DBUS),dbus) \
+	$(if $(BR2_PACKAGE_OPENSSL),openssl) \
+	$(if $(BR2_PACKAGE_FFTW_SINGLE),fftw-single) \
+	$(if $(BR2_PACKAGE_SYSTEMD),systemd)
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_LIBSAMPLERATE),y)
 PULSEAUDIO_CONF_OPTS += -Dsamplerate=enabled

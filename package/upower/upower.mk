@@ -27,6 +27,7 @@ UPOWER_CONF_OPTS = \
 	-Dudevrulesdir=/lib/udev/rules.d
 
 ifeq ($(BR2_PACKAGE_GOBJECT_INTROSPECTION),y)
+<<<<<<< HEAD
 UPOWER_CONF_OPTS += -Dintrospection=enabled
 UPOWER_DEPENDENCIES += gobject-introspection
 else
@@ -34,3 +35,12 @@ UPOWER_CONF_OPTS += -Dintrospection=disabled
 endif
 
 $(eval $(meson-package))
+=======
+UPOWER_CONF_OPTS += --enable-introspection
+UPOWER_DEPENDENCIES += gobject-introspection
+else
+UPOWER_CONF_OPTS += --disable-introspection
+endif
+
+$(eval $(autotools-package))
+>>>>>>> origin/2022.02.x

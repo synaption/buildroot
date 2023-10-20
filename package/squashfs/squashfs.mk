@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 SQUASHFS_VERSION = 4.6.1
+=======
+SQUASHFS_VERSION = 4.5.1
+>>>>>>> origin/2022.02.x
 SQUASHFS_SITE = $(call github,plougher,squashfs-tools,$(SQUASHFS_VERSION))
 SQUASHFS_LICENSE = GPL-2.0+
 SQUASHFS_LICENSE_FILES = COPYING

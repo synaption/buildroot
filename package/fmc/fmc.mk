@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 FMC_VERSION = LSDK-21.08
+=======
+FMC_VERSION = a079d2c844edd85dff85a317a63198e7988bcd09
+>>>>>>> origin/2022.02.x
 FMC_SITE = $(call github,nxp-qoriq,fmc,$(FMC_VERSION))
 FMC_LICENSE = MIT
 FMC_LICENSE_FILES = COPYING

@@ -1,5 +1,9 @@
 # From https://www.php.net/downloads.php
+<<<<<<< HEAD
 sha256  29af82e4f7509831490552918aad502697453f0869a579ee1b80b08f9112c5b8  php-8.2.11.tar.xz
+=======
+sha256  5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd  php-8.0.28.tar.xz
+>>>>>>> origin/2022.02.x
 
 # License file
 sha256  080d0d0cca64181ef8bf1df9fba0c6f0c485f78f79540c479a45b593bb3b33b5  LICENSE

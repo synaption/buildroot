@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 WEBKITGTK_VERSION = 2.40.5
+=======
+WEBKITGTK_VERSION = 2.38.6
+>>>>>>> origin/2022.02.x
 WEBKITGTK_SITE = https://www.webkitgtk.org/releases
 WEBKITGTK_SOURCE = webkitgtk-$(WEBKITGTK_VERSION).tar.xz
 WEBKITGTK_INSTALL_STAGING = YES
@@ -18,13 +22,20 @@ WEBKITGTK_DEPENDENCIES = host-ruby host-python3 host-gperf host-unifdef \
 	libtasn1 libxml2 libxslt openjpeg sqlite webp woff2
 WEBKITGTK_CONF_OPTS = \
 	-DENABLE_API_TESTS=OFF \
+<<<<<<< HEAD
+=======
+	-DENABLE_GAMEPAD=OFF \
+>>>>>>> origin/2022.02.x
 	-DENABLE_DOCUMENTATION=OFF \
 	-DENABLE_GEOLOCATION=OFF \
 	-DENABLE_MINIBROWSER=ON \
 	-DENABLE_SPELLCHECK=ON \
 	-DENABLE_WEB_RTC=OFF \
 	-DPORT=GTK \
+<<<<<<< HEAD
 	-DUSE_AVIF=OFF \
+=======
+>>>>>>> origin/2022.02.x
 	-DUSE_LIBHYPHEN=OFF \
 	-DUSE_OPENJPEG=ON \
 	-DUSE_SOUP2=ON \

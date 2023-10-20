@@ -4,9 +4,15 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 FMLIB_VERSION = LSDK-21.08
 FMLIB_SITE = $(call github,nxp-qoriq,fmlib,$(FMLIB_VERSION))
 FMLIB_LICENSE = BSD-3-Clause
+=======
+FMLIB_VERSION = 43fa98fdbf0c697167e415c3f060896d5b482791
+FMLIB_SITE = $(call github,nxp-qoriq,fmlib,$(FMLIB_VERSION))
+FMLIB_LICENSE = BSD-3-Clause, GPL-2.0+
+>>>>>>> origin/2022.02.x
 FMLIB_LICENSE_FILES = COPYING
 FMLIB_DEPENDENCIES = linux
 FMLIB_INSTALL_STAGING = YES

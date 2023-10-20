@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 WOLFSSL_VERSION = 5.6.3
+=======
+WOLFSSL_VERSION = 5.5.3
+>>>>>>> origin/2022.02.x
 WOLFSSL_SITE = $(call github,wolfSSL,wolfssl,v$(WOLFSSL_VERSION)-stable)
 WOLFSSL_INSTALL_STAGING = YES
 

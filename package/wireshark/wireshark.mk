@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 WIRESHARK_VERSION = 4.0.8
+=======
+WIRESHARK_VERSION = 3.4.16
+>>>>>>> origin/2022.02.x
 WIRESHARK_SOURCE = wireshark-$(WIRESHARK_VERSION).tar.xz
 WIRESHARK_SITE = https://www.wireshark.org/download/src/all-versions
 WIRESHARK_LICENSE = wireshark license
@@ -25,8 +29,11 @@ WIRESHARK_CONF_OPTS = \
 	-DENABLE_ILBC=OFF \
 	-DENABLE_PCAP=ON \
 	-DENABLE_SMI=OFF \
+<<<<<<< HEAD
 	-DENABLE_WERROR=OFF \
 	-DHAVE_C99_VSNPRINTF=ON \
+=======
+>>>>>>> origin/2022.02.x
 	-DLEMON_C_COMPILER=$(HOSTCC_NOCCACHE)
 
 ifeq ($(BR2_TOOLCHAIN_HAS_LIBATOMIC),y)

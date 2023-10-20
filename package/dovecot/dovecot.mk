@@ -5,7 +5,11 @@
 ################################################################################
 
 DOVECOT_VERSION_MAJOR = 2.3
+<<<<<<< HEAD
 DOVECOT_VERSION = $(DOVECOT_VERSION_MAJOR).20
+=======
+DOVECOT_VERSION = $(DOVECOT_VERSION_MAJOR).19.1
+>>>>>>> origin/2022.02.x
 DOVECOT_SITE = https://dovecot.org/releases/$(DOVECOT_VERSION_MAJOR)
 DOVECOT_INSTALL_STAGING = YES
 DOVECOT_LICENSE = LGPL-2.1, MIT, Public Domain, BSD-3-Clause, Unicode-DFS-2015

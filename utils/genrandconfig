@@ -180,11 +180,15 @@ def is_toolchain_usable(configfile, config):
            'BR2_TOOLCHAIN_EXTERNAL_LINARO_AARCH64=y\n' in configlines or \
            'BR2_TOOLCHAIN_EXTERNAL_LINARO_AARCH64_BE=y\n' in configlines or \
            'BR2_TOOLCHAIN_EXTERNAL_LINARO_ARMEB=y\n' in configlines:
+<<<<<<< HEAD
             proc = yield from asyncio.create_subprocess_exec(
                 'ldd', '--version', stdout=asyncio.subprocess.PIPE)
             ldd_version_output, _ = yield from proc.communicate()
             if proc.returncode:
                 return False
+=======
+            ldd_version_output = subprocess.check_output(['ldd', '--version'])
+>>>>>>> origin/2022.02.x
             glibc_version = ldd_version_output.decode().splitlines()[0].split()[-1]
             if StrictVersion('2.14') > StrictVersion(glibc_version):
                 print("WARN: ignoring the Linaro ARM toolchains because too old host glibc", file=sys.stderr)
@@ -306,6 +310,7 @@ def fixup_config(sysinfo, configfile):
     if 'BR2_TOOLCHAIN_EXTERNAL_CODESOURCERY_NIOSII=y\n' in configlines and \
        'BR2_PACKAGE_FLANN=y\n' in configlines:
         return False
+<<<<<<< HEAD
     # No C library for internal toolchain
     if 'BR2_TOOLCHAIN_BUILDROOT_NONE=y' in configlines:
         return False
@@ -313,6 +318,12 @@ def fixup_config(sysinfo, configfile):
     # toolchains
     if 'BR2_XTENSA_CUSTOM=y' in configlines and \
        'BR2_TOOLCHAIN_BUILDROOT=y' in configlines:
+=======
+    if 'BR2_PACKAGE_AUFS_UTIL=y\n' in configlines and \
+       'BR2_PACKAGE_AUFS_UTIL_VERSION=""\n' in configlines:
+        return False
+    if 'BR2_PACKAGE_A10DISP=y\n' in configlines:
+>>>>>>> origin/2022.02.x
         return False
 
     if 'BR2_PACKAGE_AUFS_UTIL=y\n' in configlines and \
@@ -834,11 +845,15 @@ if __name__ == '__main__':
     args.outputdir = os.path.abspath(args.outputdir)
 
     try:
+<<<<<<< HEAD
         if sys.version_info < (3, 7):
             loop = asyncio.get_event_loop()
             ret = loop.run_until_complete(gen_config(args))
         else:
             ret = asyncio.run(gen_config(args))
+=======
+        ret = gen_config(args)
+>>>>>>> origin/2022.02.x
     except Exception:
         traceback.print_exc()
         parser.exit(1)

@@ -4,15 +4,23 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBGIT2_VERSION = 1.6.4
+=======
+LIBGIT2_VERSION = 1.5.1
+>>>>>>> origin/2022.02.x
 LIBGIT2_SITE = $(call github,libgit2,libgit2,v$(LIBGIT2_VERSION))
 LIBGIT2_LICENSE = \
 	GPL-2.0 with linking exception, \
 	MIT (sha1), \
 	BSD-3-Clause (sha256), \
 	wildmatch license (wildmatch), \
+<<<<<<< HEAD
 	CC0-1.0 (xoroshiro256), \
 	BSD-2-Clause (basename_r)
+=======
+	CC0-1.0 (xoroshiro256)
+>>>>>>> origin/2022.02.x
 LIBGIT2_LICENSE_FILES = COPYING
 LIBGIT2_CPE_ID_VENDOR = libgit2_project
 LIBGIT2_INSTALL_STAGING = YES
@@ -24,8 +32,11 @@ LIBGIT2_CONF_OPTS = \
 	-DUSE_HTTP_PARSER=system \
 	-DUSE_NTLMCLIENT=OFF \
 	-DUSE_THREADS=$(if $(BR2_TOOLCHAIN_HAS_THREADS),ON,OFF)
+<<<<<<< HEAD
 
 LIBGIT2_SUPPORTS_IN_SOURCE_BUILD = NO
+=======
+>>>>>>> origin/2022.02.x
 
 LIBGIT2_DEPENDENCIES = zlib libhttpparser
 

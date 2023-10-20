@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MBEDTLS_VERSION = 2.28.5
+=======
+MBEDTLS_VERSION = 2.28.2
+>>>>>>> origin/2022.02.x
 MBEDTLS_SITE = $(call github,ARMmbed,mbedtls,v$(MBEDTLS_VERSION))
 MBEDTLS_CONF_OPTS = \
 	-DCMAKE_C_FLAGS="$(TARGET_CFLAGS) -std=c99" \

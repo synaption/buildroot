@@ -90,9 +90,15 @@ all:
 .PHONY: all
 
 # Set and export the version string
+<<<<<<< HEAD
 export BR2_VERSION := 2023.08.2
 # Actual time the release is cut (for reproducible builds)
 BR2_VERSION_EPOCH = 1697404000
+=======
+export BR2_VERSION := 2022.02.12
+# Actual time the release is cut (for reproducible builds)
+BR2_VERSION_EPOCH = 1683230000
+>>>>>>> origin/2022.02.x
 
 # Save running make version since it's clobbered by the make package
 RUNNING_MAKE_VERSION := $(MAKE_VERSION)
@@ -1241,6 +1247,7 @@ print-version:
 	@echo $(BR2_VERSION_FULL)
 
 check-package:
+<<<<<<< HEAD
 	$(Q)./utils/check-package `git ls-tree -r --name-only HEAD` \
 		--ignore-list=$(TOPDIR)/.checkpackageignore
 
@@ -1248,6 +1255,11 @@ check-package:
 .checkpackageignore:
 	$(Q)./utils/check-package --failed-only `git ls-tree -r --name-only HEAD` \
 		> .checkpackageignore
+=======
+	find $(TOPDIR) -type f \( -name '*.mk' -o -name '*.hash' -o -name 'Config.*' -o -name '*.patch' \) \
+		-a -not -name '*.orig' -a -not -name '*.rej' \
+		-exec ./utils/check-package --exclude=Sob {} +
+>>>>>>> origin/2022.02.x
 
 include docs/manual/manual.mk
 -include $(foreach dir,$(BR2_EXTERNAL_DIRS),$(sort $(wildcard $(dir)/docs/*/*.mk)))

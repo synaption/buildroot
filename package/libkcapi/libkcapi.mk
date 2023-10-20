@@ -15,6 +15,7 @@ LIBKCAPI_CONF_ENV = \
 	ac_cv_path_DB2PDF="" \
 	ac_cv_path_DB2PS="" \
 	ac_cv_path_XMLTO=""
+<<<<<<< HEAD
 LIBKCAPI_CONF_OPTS = --disable-werror
 LIBKCAPI_MAKE_OPTS = CPPFLAGS="$(TARGET_CPPFLAGS)"
 
@@ -29,6 +30,9 @@ LIBKCAPI_CONF_OPTS += --enable-kcapi-dgstapp
 else
 LIBKCAPI_CONF_OPTS += --disable-kcapi-dgstapp
 endif
+=======
+LIBKCAPI_MAKE_OPTS = CPPFLAGS="$(TARGET_CPPFLAGS)"
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_LIBKCAPI_ENCAPP),y)
 LIBKCAPI_CONF_OPTS += --enable-kcapi-encapp

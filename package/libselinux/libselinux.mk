@@ -11,7 +11,11 @@ LIBSELINUX_LICENSE_FILES = LICENSE
 LIBSELINUX_CPE_ID_VENDOR = selinuxproject
 
 LIBSELINUX_DEPENDENCIES = \
+<<<<<<< HEAD
 	$(BR2_COREUTILS_HOST_DEPENDENCY) host-pkgconf libsepol pcre2
+=======
+	$(BR2_COREUTILS_HOST_DEPENDENCY) host-pkgconf libsepol pcre
+>>>>>>> origin/2022.02.x
 
 LIBSELINUX_INSTALL_STAGING = YES
 
@@ -81,6 +85,7 @@ define LIBSELINUX_INSTALL_TARGET_CMDS
 endef
 
 HOST_LIBSELINUX_DEPENDENCIES = \
+<<<<<<< HEAD
 	host-pkgconf \
 	host-libsepol \
 	host-pcre2 \
@@ -88,6 +93,9 @@ HOST_LIBSELINUX_DEPENDENCIES = \
 	host-python3 \
 	host-python-pip \
 	host-python-setuptools
+=======
+	host-pkgconf host-libsepol host-pcre host-swig host-python3
+>>>>>>> origin/2022.02.x
 
 HOST_LIBSELINUX_MAKE_OPTS = \
 	$(HOST_CONFIGURE_OPTS) \

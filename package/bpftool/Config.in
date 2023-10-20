@@ -2,7 +2,10 @@ config BR2_PACKAGE_BPFTOOL_ARCH_SUPPORTS
 	bool
 	# see libbpf/src/bpf.c
 	default y if BR2_arc
+<<<<<<< HEAD
 	default y if BR2_arm || BR2_armeb
+=======
+>>>>>>> origin/2022.02.x
 	default y if BR2_aarch64 || BR2_aarch64_be
 	default y if BR2_i386 || BR2_x86_64
 	default y if BR2_sparc || BR2_sparc64

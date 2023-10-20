@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 BPFTOOL_VERSION = v7.1.0
+=======
+BPFTOOL_VERSION = v6.8.0
+>>>>>>> origin/2022.02.x
 BPFTOOL_SITE = https://github.com/libbpf/bpftool
 BPFTOOL_SITE_METHOD = git
 BPFTOOL_GIT_SUBMODULES = YES

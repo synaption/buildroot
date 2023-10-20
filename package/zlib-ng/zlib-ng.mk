@@ -33,12 +33,15 @@ ifeq ($(BR2_powerpc_power8),y)
 ZLIB_NG_CONF_OPTS += -DWITH_POWER8=ON
 else
 ZLIB_NG_CONF_OPTS += -DWITH_POWER8=OFF
+<<<<<<< HEAD
 endif
 
 ifeq ($(BR2_powerpc_power9),y)
 ZLIB_NG_CONF_OPTS += -DWITH_POWER9=ON
 else
 ZLIB_NG_CONF_OPTS += -DWITH_POWER9=OFF
+=======
+>>>>>>> origin/2022.02.x
 endif
 
 $(eval $(cmake-package))

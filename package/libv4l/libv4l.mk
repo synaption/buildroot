@@ -27,8 +27,12 @@ LIBV4L_DEPENDENCIES += alsa-lib
 endif
 
 ifeq ($(BR2_PACKAGE_ARGP_STANDALONE),y)
+<<<<<<< HEAD
 LIBV4L_DEPENDENCIES += argp-standalone $(TARGET_NLS_DEPENDENCIES)
 LIBV4L_CONF_ENV += LIBS=$(TARGET_NLS_LIBS)
+=======
+LIBV4L_DEPENDENCIES += argp-standalone
+>>>>>>> origin/2022.02.x
 endif
 
 LIBV4L_DEPENDENCIES += $(if $(BR2_PACKAGE_LIBICONV),libiconv)

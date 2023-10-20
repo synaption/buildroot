@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MTOOLS_VERSION = 4.0.43
+=======
+MTOOLS_VERSION = 4.0.38
+>>>>>>> origin/2022.02.x
 MTOOLS_SOURCE = mtools-$(MTOOLS_VERSION).tar.lz
 MTOOLS_SITE = $(BR2_GNU_MIRROR)/mtools
 MTOOLS_LICENSE = GPL-3.0+

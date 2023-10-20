@@ -25,8 +25,11 @@ define SSDP_RESPONDER_INSTALL_INIT_SYSV
 		$(TARGET_DIR)/etc/init.d/S50ssdpd
 endef
 
+<<<<<<< HEAD
 define SSDP_RESPONDER_INSTALL_INIT_SYSTEMD
 	mkdir -p $(TARGET_DIR)/var/lib/misc/
 endef
 
+=======
+>>>>>>> origin/2022.02.x
 $(eval $(autotools-package))

@@ -11,6 +11,7 @@ TMUX_LICENSE_FILES = COPYING
 TMUX_CPE_ID_VENDOR = tmux_project
 TMUX_DEPENDENCIES = libevent ncurses host-pkgconf
 
+<<<<<<< HEAD
 ifeq ($(BR2_PACKAGE_SYSTEMD),y)
 TMUX_DEPENDENCIES += systemd
 TMUX_CONF_OPTS += --enable-systemd
@@ -18,6 +19,8 @@ else
 TMUX_CONF_OPTS += --disable-systemd
 endif
 
+=======
+>>>>>>> origin/2022.02.x
 ifeq ($(BR2_PACKAGE_UTF8PROC),y)
 TMUX_DEPENDENCIES += utf8proc
 TMUX_CONF_OPTS += --enable-utf8proc
@@ -25,12 +28,15 @@ else
 TMUX_CONF_OPTS += --disable-utf8proc
 endif
 
+<<<<<<< HEAD
 # tmux uses custom --enable-static option, instead of standard libtool
 # directive resulting in a build failure with systemd or utf8proc
 ifeq ($(BR2_SHARED_STATIC_LIBS),y)
 TMUX_CONF_OPTS += --disable-static
 endif
 
+=======
+>>>>>>> origin/2022.02.x
 # Add /usr/bin/tmux to /etc/shells otherwise some login tools like dropbear
 # can reject the user connection. See man shells.
 define TMUX_ADD_TMUX_TO_SHELLS

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 TIMESCALEDB_VERSION = 2.11.2
+=======
+TIMESCALEDB_VERSION = 2.5.2
+>>>>>>> origin/2022.02.x
 TIMESCALEDB_SITE = $(call github,timescale,timescaledb,$(TIMESCALEDB_VERSION))
 TIMESCALEDB_LICENSE = Apache-2.0
 TIMESCALEDB_LICENSE_FILES = LICENSE

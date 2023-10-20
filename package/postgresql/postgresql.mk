@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 POSTGRESQL_VERSION = 15.4
+=======
+POSTGRESQL_VERSION = 14.7
+>>>>>>> origin/2022.02.x
 POSTGRESQL_SOURCE = postgresql-$(POSTGRESQL_VERSION).tar.bz2
 POSTGRESQL_SITE = https://ftp.postgresql.org/pub/source/v$(POSTGRESQL_VERSION)
 POSTGRESQL_LICENSE = PostgreSQL

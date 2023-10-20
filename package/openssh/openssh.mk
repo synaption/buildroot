@@ -13,6 +13,12 @@ OPENSSH_SITE = http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable
 OPENSSH_LICENSE = BSD-3-Clause, BSD-2-Clause, Public Domain
 OPENSSH_LICENSE_FILES = LICENCE
 
+<<<<<<< HEAD
+=======
+# patch touching m4/openssh.m4
+OPENSSH_AUTORECONF = YES
+
+>>>>>>> origin/2022.02.x
 OPENSSH_CONF_ENV = \
 	LD="$(TARGET_CC)" \
 	LDFLAGS="$(TARGET_CFLAGS)" \

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 SURICATA_VERSION = 6.0.14
+=======
+SURICATA_VERSION = 6.0.6
+>>>>>>> origin/2022.02.x
 SURICATA_SITE = https://www.openinfosecfoundation.org/download
 SURICATA_LICENSE = GPL-2.0
 SURICATA_LICENSE_FILES = COPYING LICENSE

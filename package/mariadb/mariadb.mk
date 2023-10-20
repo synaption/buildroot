@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MARIADB_VERSION = 10.11.4
+=======
+MARIADB_VERSION = 10.3.36
+>>>>>>> origin/2022.02.x
 MARIADB_SITE = https://downloads.mariadb.org/interstitial/mariadb-$(MARIADB_VERSION)/source
 MARIADB_LICENSE = GPL-2.0 (server), GPL-2.0 with FLOSS exception (GPL client library), LGPL-2.0 (LGPL client library)
 # Tarball no longer contains LGPL license text
@@ -72,6 +76,7 @@ MARIADB_CONF_OPTS += \
 	-DLIBRESSL_RESULT__TRYRUN_OUTPUT="LibreSSL $(LIBRESSL_VERSION)"
 endif
 
+<<<<<<< HEAD
 ifeq ($(BR2_PACKAGE_SYSTEMD),y)
 MARIADB_DEPENDENCIES += systemd
 MARIADB_CONF_OPTS += -DWITH_SYSTEMD=yes
@@ -79,6 +84,8 @@ else
 MARIADB_CONF_OPTS += -DWITH_SYSTEMD=no
 endif
 
+=======
+>>>>>>> origin/2022.02.x
 ifeq ($(BR2_PACKAGE_MARIADB_SERVER),y)
 ifeq ($(BR2_PACKAGE_MARIADB_SERVER_EMBEDDED),y)
 MARIADB_CONF_OPTS += -DWITH_EMBEDDED_SERVER=ON

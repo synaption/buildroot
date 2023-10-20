@@ -8,7 +8,11 @@ PCSC_LITE_VERSION = 1.9.9
 PCSC_LITE_SOURCE = pcsc-lite-$(PCSC_LITE_VERSION).tar.bz2
 PCSC_LITE_SITE = https://pcsclite.apdu.fr/files
 PCSC_LITE_INSTALL_STAGING = YES
+<<<<<<< HEAD
 PCSC_LITE_DEPENDENCIES = host-pkgconf host-flex
+=======
+PCSC_LITE_DEPENDENCIES = host-pkgconf
+>>>>>>> origin/2022.02.x
 PCSC_LITE_LICENSE = BSD-2-Clause (auth), BSD-3-Clause, GPL-3.0+ (spy, tests), ISC (simclist)
 PCSC_LITE_LICENSE_FILES = COPYING GPL-3.0.txt
 PCSC_LITE_SELINUX_MODULES = pcscd

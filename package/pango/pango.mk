@@ -5,7 +5,11 @@
 ################################################################################
 
 PANGO_VERSION_MAJOR = 1.50
+<<<<<<< HEAD
 PANGO_VERSION = $(PANGO_VERSION_MAJOR).14
+=======
+PANGO_VERSION = $(PANGO_VERSION_MAJOR).10
+>>>>>>> origin/2022.02.x
 PANGO_SOURCE = pango-$(PANGO_VERSION).tar.xz
 PANGO_SITE = https://download.gnome.org/sources/pango/$(PANGO_VERSION_MAJOR)
 PANGO_INSTALL_STAGING = YES

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 MUTT_VERSION = 2.2.12
+=======
+MUTT_VERSION = 2.2.9
+>>>>>>> origin/2022.02.x
 MUTT_SITE = https://bitbucket.org/mutt/mutt/downloads
 MUTT_LICENSE = GPL-2.0+
 MUTT_LICENSE_FILES = GPL
@@ -40,11 +44,15 @@ MUTT_CONF_OPTS += \
 
 # Force the path to "gpgrt-config" (from the libgpg-error package) to
 # avoid using the one on host, if present.
+<<<<<<< HEAD
 MUTT_GPGRT_CONFIG = $(STAGING_DIR)/usr/bin/gpgrt-config
 ifeq ($(BR2_STATIC_LIBS),y)
 MUTT_GPGRT_CONFIG += --static
 endif
 MUTT_CONF_ENV += GPGRT_CONFIG="$(MUTT_GPGRT_CONFIG)"
+=======
+MUTT_CONF_ENV += GPGRT_CONFIG=$(STAGING_DIR)/usr/bin/gpgrt-config
+>>>>>>> origin/2022.02.x
 else
 MUTT_CONF_OPTS += --disable-gpgme
 endif

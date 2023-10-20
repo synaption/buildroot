@@ -21,6 +21,7 @@ PIXMAN_AUTORECONF = YES
 # don't build gtk based demos
 PIXMAN_CONF_OPTS = \
 	--disable-gtk \
+<<<<<<< HEAD
 	--disable-loongson-mmi \
 	--disable-arm-iwmmxt
 
@@ -30,6 +31,9 @@ PIXMAN_CONF_OPTS = \
 # "not sure why NVD keeps assigning CVEs like this. This is just a
 # test executable".
 PIXMAN_IGNORE_CVES += CVE-2023-37769
+=======
+	--disable-loongson-mmi
+>>>>>>> origin/2022.02.x
 
 # The ARM SIMD code from pixman requires a recent enough ARM core, but
 # there is a runtime CPU check that makes sure it doesn't get used if

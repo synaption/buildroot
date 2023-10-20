@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 C_ARES_VERSION = 1.19.1
+=======
+C_ARES_VERSION = 1.19.0
+>>>>>>> origin/2022.02.x
 C_ARES_SITE = http://c-ares.haxx.se/download
 C_ARES_INSTALL_STAGING = YES
 C_ARES_CONF_OPTS = --with-random=/dev/urandom

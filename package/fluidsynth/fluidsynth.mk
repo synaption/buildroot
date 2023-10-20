@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 FLUIDSYNTH_VERSION = 2.3.3
+=======
+FLUIDSYNTH_VERSION = 2.2.8
+>>>>>>> origin/2022.02.x
 FLUIDSYNTH_SITE = $(call github,FluidSynth,fluidsynth,v$(FLUIDSYNTH_VERSION))
 FLUIDSYNTH_LICENSE = LGPL-2.1+
 FLUIDSYNTH_LICENSE_FILES = LICENSE

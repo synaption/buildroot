@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 GO_VERSION = 1.20.10
+=======
+GO_VERSION = 1.18.10
+>>>>>>> origin/2022.02.x
 GO_SITE = https://storage.googleapis.com/golang
 GO_SOURCE = go$(GO_VERSION).src.tar.gz
 

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 GST_OMX_VERSION = 1.22.6
+=======
+GST_OMX_VERSION = 1.20.4
+>>>>>>> origin/2022.02.x
 GST_OMX_SOURCE = gst-omx-$(GST_OMX_VERSION).tar.xz
 GST_OMX_SITE = https://gstreamer.freedesktop.org/src/gst-omx
 

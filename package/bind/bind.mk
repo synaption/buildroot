@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 BIND_VERSION = 9.16.44
+=======
+BIND_VERSION = 9.16.38
+>>>>>>> origin/2022.02.x
 BIND_SOURCE= bind-$(BIND_VERSION).tar.xz
 BIND_SITE = https://ftp.isc.org/isc/bind9/$(BIND_VERSION)
 # bind does not support parallel builds.
@@ -26,6 +30,10 @@ BIND_TARGET_SERVER_SBIN += dnssec-keyfromlabel dnssec-signzone tsig-keygen
 BIND_TARGET_TOOLS_BIN = dig host nslookup nsupdate
 BIND_CONF_ENV = \
 	BUILD_CC="$(TARGET_CC)" \
+<<<<<<< HEAD
+=======
+	BUILD_CFLAGS="$(TARGET_CFLAGS)" \
+>>>>>>> origin/2022.02.x
 	LIBS=`$(PKG_CONFIG_HOST_BINARY) --libs openssl`
 BIND_CONF_OPTS = \
 	--without-cmocka \
@@ -35,6 +43,7 @@ BIND_CONF_OPTS = \
 	--with-openssl=$(STAGING_DIR)/usr
 
 BIND_DEPENDENCIES = host-pkgconf libuv openssl
+<<<<<<< HEAD
 
 BIND_CFLAGS = $(TARGET_CFLAGS)
 
@@ -43,6 +52,8 @@ BIND_CFLAGS += -O0
 endif
 
 BIND_CONF_OPTS += CFLAGS="$(BIND_CFLAGS)"
+=======
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_PACKAGE_ZLIB),y)
 BIND_CONF_OPTS += --with-zlib

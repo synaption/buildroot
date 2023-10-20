@@ -30,6 +30,7 @@ GRUB2_IGNORE_CVES += CVE-2019-14865
 # grub_linuxefi_secure_validate() is not implemented in the grub2
 # version available in Buildroot.
 GRUB2_IGNORE_CVES += CVE-2020-15705
+<<<<<<< HEAD
 # 0002-grub-mkconfig-Restore-umask-for-the-grub.cfg.patch
 GRUB2_IGNORE_CVES += CVE-2021-3981
 # vulnerability is specific to the SUSE distribution
@@ -53,6 +54,10 @@ GRUB2_IGNORE_CVES += CVE-2022-28734
 GRUB2_IGNORE_CVES += CVE-2022-2601
 # 0018-font-Fix-an-integer-underflow-in-blit_comb.patch
 GRUB2_IGNORE_CVES += CVE-2022-3775
+=======
+# vulnerability is specific to the SUSE distribution
+GRUB2_IGNORE_CVES += CVE-2021-46705
+>>>>>>> origin/2022.02.x
 
 ifeq ($(BR2_TARGET_GRUB2_INSTALL_TOOLS),y)
 GRUB2_INSTALL_TARGET = YES

@@ -4,7 +4,11 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 DOCKER_ENGINE_VERSION = 24.0.6
+=======
+DOCKER_ENGINE_VERSION = 20.10.22
+>>>>>>> origin/2022.02.x
 DOCKER_ENGINE_SITE = $(call github,moby,moby,v$(DOCKER_ENGINE_VERSION))
 
 DOCKER_ENGINE_LICENSE = Apache-2.0
@@ -15,6 +19,7 @@ DOCKER_ENGINE_GOMOD = github.com/docker/docker
 
 DOCKER_ENGINE_CPE_ID_VENDOR = docker
 DOCKER_ENGINE_CPE_ID_PRODUCT = docker
+
 
 DOCKER_ENGINE_LDFLAGS = \
 	-X $(DOCKER_ENGINE_GOMOD)/dockerversion.BuildTime="" \
@@ -98,6 +103,7 @@ define DOCKER_ENGINE_DRIVER_DM_LINUX_CONFIG_FIXUPS
 endef
 endif
 
+<<<<<<< HEAD
 # based on contrib/check-config.sh
 define DOCKER_ENGINE_LINUX_CONFIG_FIXUPS
 	$(call KCONFIG_ENABLE_OPT,CONFIG_POSIX_MQUEUE)
@@ -133,5 +139,8 @@ define DOCKER_ENGINE_LINUX_CONFIG_FIXUPS
 	$(DOCKER_ENGINE_DRIVER_BTRFS_LINUX_CONFIG_FIXUPS)
 	$(DOCKER_ENGINE_DRIVER_DM_LINUX_CONFIG_FIXUPS)
 endef
+=======
+
+>>>>>>> origin/2022.02.x
 
 $(eval $(golang-package))

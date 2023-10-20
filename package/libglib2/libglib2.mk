@@ -4,8 +4,13 @@
 #
 ################################################################################
 
+<<<<<<< HEAD
 LIBGLIB2_VERSION_MAJOR = 2.76
 LIBGLIB2_VERSION = $(LIBGLIB2_VERSION_MAJOR).1
+=======
+LIBGLIB2_VERSION_MAJOR = 2.70
+LIBGLIB2_VERSION = $(LIBGLIB2_VERSION_MAJOR).4
+>>>>>>> origin/2022.02.x
 LIBGLIB2_SOURCE = glib-$(LIBGLIB2_VERSION).tar.xz
 LIBGLIB2_SITE = https://download.gnome.org/sources/glib/$(LIBGLIB2_VERSION_MAJOR)
 LIBGLIB2_LICENSE = LGPL-2.1+

@@ -27,6 +27,7 @@ UNZIP_IGNORE_CVES = \
 	CVE-2019-13232 \
 	CVE-2022-0529 \
 	CVE-2022-0530
+<<<<<<< HEAD
 
 # unzip already defines _LARGEFILE_SOURCE and _LARGEFILE64_SOURCE when
 # necessary, redefining it on the command line causes some warnings.
@@ -41,5 +42,7 @@ UNZIP_TARGET_CXXFLAGS = \
 UNZIP_CONF_OPTS += \
 	-DCMAKE_C_FLAGS="$(UNZIP_TARGET_CFLAGS) -DLARGE_FILE_SUPPORT" \
 	-DCMAKE_CXX_FLAGS="$(UNZIP_TARGET_CXXFLAGS) -DLARGE_FILE_SUPPORT"
+=======
+>>>>>>> origin/2022.02.x
 
 $(eval $(cmake-package))
