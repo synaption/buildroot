@@ -5,6 +5,9 @@ After=network.target
 [Service]
 EnvironmentFile=-/etc/default/pigpio
 ExecStart=/usr/bin/pigpiod -g $PIGPIOD_ARGS
+#################
+TimeoutStopSec=15
+#################
 
 [Install]
 WantedBy=multi-user.target

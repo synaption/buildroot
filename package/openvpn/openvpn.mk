@@ -75,4 +75,12 @@ define OPENVPN_INSTALL_INIT_SYSV
 		$(TARGET_DIR)/etc/init.d/S60openvpn
 endef
 
+####################
+#define OPENVPN_INSTALL_INIT_SYSTEMD
+#	$(INSTALL) -D -m 644 package/openvpn/openvpn-client@node.service \
+#		$(TARGET_DIR)/usr/lib/systemd/system/openvpn-client@node.service
+#endef
+####################
+
+
 $(eval $(autotools-package))
